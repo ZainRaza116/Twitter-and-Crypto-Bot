@@ -40,19 +40,8 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
     print("Tweet text:", tweet_text)
     print()
 
-username = input("Enter Username")
-followers = input("Enter number of followers")
-run_input = {
-    "username": f"{username}",
-    "max_posts": 100,
-}
 
-print("****************** EXTRACTING People *****************")
-run = client.actor("lw4wgsTf2pIShphkK").call(run_input=run_input)
 
-# Fetch and print Actor results from the run's dataset (if there are any)
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
-    print(item)
 # act_id = 'mAxIirfenUcKwNXST'
 # api_token = 'apify_api_jDxlb5wZ0DaIQEEOMp41CAcHJJcb0e1q3g0A'
 #
@@ -102,7 +91,6 @@ import requests
 # Replace 'your_etherscan_api_key' with your actual Etherscan API key
 etherscan_api_key = 'UWBP3JCUCITC9DS9ZHE5SEXIDB71FUEUR8'
 
-# Specify the wallet address you want to track
 wallet = input("Enter Your Wallet: ")
 
 # Specify the coins you are interested in (e.g., Ethereum and any other ERC-20 tokens)
