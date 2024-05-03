@@ -1,10 +1,8 @@
 from apify_client import ApifyClient
 import requests
 
-# Initialize the ApifyClient with your API token
 client = ApifyClient("apify_api_jDxlb5wZ0DaIQEEOMp41CAcHJJcb0e1q3g0A")
 
-# Define the function to extract tweets
 def extract_tweets():
     search = input("Write Coin Symbol: $")
     name = input("Write Name of Coin: ")
